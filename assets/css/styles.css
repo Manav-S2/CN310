@@ -234,10 +234,10 @@ img {
 }
 
 /* /=============== HOME ===============/ */
-.home{
+.page{
   position: relative;
 } 
-.home__bg{
+.page_bg{
   position: absolute;
   top: 0;
   left: 0;
@@ -248,7 +248,7 @@ img {
 
 }
 
-.home__shadow{
+.page_sdw{
   position: absolute;
   top: 0;
   left: 0;
@@ -259,42 +259,48 @@ img {
   hsl(0,0%,0%)78%);
 }
 
-.home__container{
+.page__container{
     position: relative;
     padding-top: 3rem;
     row-gap: 3rem;
 }
 
-.home__data{
+.page_dt{
   text-align: center;
 }
-.home__subtitle{
+.page_subt{
   font-size: var(--h3-font-size);
   margin-bottom: .5rem;
 }
-.home__title{
+.page__Title{
       font-size: var(--biggest-font-size);
       margin-bottom: 1rem;
 }
-.home__description{
+.page_desc{
   margin-bottom: 2rem;
   color: var(--title-color);
 
 }
-.home__cards{
+.page__cards{
   grid-template-columns: 240px;
   justify-content: center;
 
 }
-.home__card{
+.page__card{
   position: relative;
   overflow: hidden;
 
 }
-.home__card-img{
-  transition: transform .4s;
+/* CSS for image hover effect */
+.page__card-img {
+  transition: opacity 0.3s ease; /* Add transition effect with 0.3s duration and ease timing function */
 }
-.home__card-shadow{
+
+.page__card-img:hover {
+  opacity: 0.8; /* Reduce opacity to 80% on hover */
+}
+
+.page__card-shadow{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -306,7 +312,7 @@ img {
 
 }
 
-.home__card-title{
+.page__card-title{
   position: absolute;
   left: 1rem;
   bottom: 1rem;
@@ -314,7 +320,7 @@ img {
   z-index: 1;
 }
 
-.home_card:hover .home_card-img{
+.page_card:hover .page_card-img{
   transform: scale(1.2);
 }
 
